@@ -1,0 +1,49 @@
+{
+  "valid_codes": [
+    {
+      "code": "AF3-FJK-418",
+      "expected_discount": "30"
+    },
+    {
+      "code": "JJ5-OPQ-320",
+      "expected_discount": "50"
+    },
+    {
+      "code": "ZZ2-XYZ-231",
+      "expected_discount": "20"
+    },
+    {
+      "code": "aa2-bbb-231",
+      "expected_discount": "20"
+    }
+  ],
+  "invalid_codes": [
+    {
+      "code": "AF3-FJK-419",
+      "reason": "Invalid check digit"
+    },
+    {
+      "code": "JJ5-OPQ-322",
+      "reason": "Invalid check digit"
+    },
+    {
+      "code": "123-456-789",
+      "reason": "Format invalid"
+    },
+    {
+      "code": "A2-FJ-411",
+      "reason": "Format invalid"
+    },
+    {
+      "code": "AF3-FJK-41",
+      "reason": "Too short"
+    },
+    {
+      "code": "AF3-FJK-4189",
+      "reason": "Too long"
+    }
+  ],
+  "empty_code": {
+    "code": "  "
+  }
+}
